@@ -2,3 +2,4 @@ nba_api==1.1.14
 pandas==1.5.2
 Pillow==9.3.0
 streamlit==1.16.0
+openpyxl==3.0.10
