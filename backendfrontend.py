@@ -170,7 +170,8 @@ with st.spinner('Predicting Winners... This may take a minute.'):
 
     df3 = pd.read_excel('predictions.xlsx')
 
-    mypath = '/Users/shafmuhammad/PycharmProjects/nbaapitest/nba logos'
+#    mypath = '/Users/shafmuhammad/PycharmProjects/nbaapitest/nba logos'
+    mypath = 'nba logos'
     onlyfiles = [f for f in listdir(mypath) if isfile(join(mypath, f))]
     onlyfiles = [x.lower() for x in onlyfiles]
 
