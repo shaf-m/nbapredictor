@@ -171,9 +171,42 @@ with st.spinner('Predicting Winners... This may take a minute.'):
     df3 = pd.read_excel('predictions.xlsx')
 
 #    mypath = '/Users/shafmuhammad/PycharmProjects/nbaapitest/nba logos'
-    mypath = 'nba logos'
-    onlyfiles = [f for f in listdir(mypath) if isfile(join(mypath, f))]
-    onlyfiles = [x.lower() for x in onlyfiles]
+    #mypath = 'nba logos'
+    #onlyfiles = [f for f in listdir(mypath) if isfile(join(mypath, f))]
+    #onlyfiles = [x.lower() for x in onlyfiles]
+
+    onlyfiles = [
+        'https://loodibee.com/wp-content/uploads/nba-atlanta-hawks-logo-300x300.png',
+        'https://loodibee.com/wp-content/uploads/nba-boston-celtics-logo-300x300.png',
+        'https://loodibee.com/wp-content/uploads/nba-brooklyn-nets-logo-300x300.png',
+        'https://loodibee.com/wp-content/uploads/nba-charlotte-hornets-logo-300x300.png',
+        'https://loodibee.com/wp-content/uploads/nba-chicago-bulls-logo-300x300.png',
+        'https://loodibee.com/wp-content/uploads/Clevelan-Cavaliers-logo-2022-300x300.png',
+        'https://loodibee.com/wp-content/uploads/nba-dallas-mavericks-logo-300x300.png',
+        'https://loodibee.com/wp-content/uploads/nba-denver-nuggets-logo-2018-300x300.png',
+        'https://loodibee.com/wp-content/uploads/nba-detroit-pistons-logo-300x300.png',
+        'https://loodibee.com/wp-content/uploads/nba-golden-state-warriors-logo-2020-300x300.png',
+        'https://loodibee.com/wp-content/uploads/nba-houston-rockets-logo-2020-300x300.png',
+        'https://loodibee.com/wp-content/uploads/nba-indiana-pacers-logo-300x300.png',
+        'https://loodibee.com/wp-content/uploads/nba-la-clippers-logo-300x300.png',
+        'https://loodibee.com/wp-content/uploads/nba-los-angeles-lakers-logo-300x300.png',
+        'https://loodibee.com/wp-content/uploads/nba-memphis-grizzlies-logo-300x300.png',
+        'https://loodibee.com/wp-content/uploads/nba-miami-heat-logo-300x300.png',
+        'https://loodibee.com/wp-content/uploads/nba-milwaukee-bucks-logo-300x300.png',
+        'https://loodibee.com/wp-content/uploads/nba-minnesota-timberwolves-logo-300x300.png',
+        'https://loodibee.com/wp-content/uploads/nba-new-orleans-pelicans-logo-300x300.png',
+        'https://loodibee.com/wp-content/uploads/nba-new-york-knicks-logo-300x300.png',
+        'https://loodibee.com/wp-content/uploads/nba-oklahoma-city-thunder-logo-300x300.png',
+        'https://loodibee.com/wp-content/uploads/nba-orlando-magic-logo-300x300.png',
+        'https://loodibee.com/wp-content/uploads/nba-philadelphia-76ers-logo-300x300.png',
+        'https://loodibee.com/wp-content/uploads/nba-phoenix-suns-logo-300x300.png',
+        'https://loodibee.com/wp-content/uploads/nba-portland-trail-blazers-logo-300x300.png',
+        'https://loodibee.com/wp-content/uploads/nba-sacramento-kings-logo-300x300.png',
+        'https://loodibee.com/wp-content/uploads/nba-san-antonio-spurs-logo-300x300.png',
+        'https://loodibee.com/wp-content/uploads/nba-toronto-raptors-logo-2020-300x300.png',
+        'https://loodibee.com/wp-content/uploads/utah-jazz-logo-2022-300x300.png',
+        'https://loodibee.com/wp-content/uploads/nba-washington-wizards-logo-300x300.png'
+    ]
 
 
     def getLogo(teamLastName):
@@ -181,11 +214,10 @@ with st.spinner('Predicting Winners... This may take a minute.'):
         # teamLastName = 'raptors'
         for fileName in onlyfiles:
             if teamLastName.lower() == 'nets':
-                logo = 'nba-brooklyn-nets-logo-300x300.png'
+                logo = 'https://loodibee.com/wp-content/uploads/nba-brooklyn-nets-logo-300x300.pngg'
             elif teamLastName.lower() in fileName:
                 logo = fileName
-        return f"nba logos/{logo}"
-
+        return logo
 
     winnerList = []
     homeTeamList = []
