@@ -181,7 +181,7 @@ with st.spinner('Predicting Winners... This may take a minute.'):
         'https://loodibee.com/wp-content/uploads/nba-brooklyn-nets-logo-300x300.png',
         'https://loodibee.com/wp-content/uploads/nba-charlotte-hornets-logo-300x300.png',
         'https://loodibee.com/wp-content/uploads/nba-chicago-bulls-logo-300x300.png',
-        'https://www.pngall.com/wp-content/uploads/4/Cleveland-Cavaliers-Logo-PNG-Free-Download.png',
+        'https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/Cleveland_Cavaliers_secondary_logo.svg/1186px-Cleveland_Cavaliers_secondary_logo.svg.png',
         'https://loodibee.com/wp-content/uploads/nba-dallas-mavericks-logo-300x300.png',
         'https://loodibee.com/wp-content/uploads/nba-denver-nuggets-logo-2018-300x300.png',
         'https://loodibee.com/wp-content/uploads/nba-detroit-pistons-logo-300x300.png',
