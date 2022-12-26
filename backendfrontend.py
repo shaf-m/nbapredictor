@@ -208,13 +208,12 @@ with st.spinner('Predicting Winners... This may take a minute.'):
         'https://loodibee.com/wp-content/uploads/nba-washington-wizards-logo-300x300.png'
     ]
 
-
     def getLogo(teamLastName):
         logo = ''
         # teamLastName = 'raptors'
         for fileName in onlyfiles:
             if teamLastName.lower() == 'nets':
-                logo = 'https://loodibee.com/wp-content/uploads/nba-brooklyn-nets-logo-300x300.pngg'
+                logo = 'https://loodibee.com/wp-content/uploads/nba-brooklyn-nets-logo-300x300.png'
             elif teamLastName.lower() in fileName:
                 logo = fileName
         return logo
