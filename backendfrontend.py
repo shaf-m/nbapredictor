@@ -31,6 +31,7 @@ monthDict = {'01': 'Jan',
              '12': 'Dec'}
 
 formattedDate = f'{dayWeek}, {monthDict[month]} {day}, {year}'
+# formattedDate = 'Mon, Dec 26, 2022'
 print(f'\nSimulating games and predicting winners for {formattedDate}.\n')
 
 dataframe = pd.read_excel('december.xlsx')
@@ -177,7 +178,9 @@ def getLogo(teamLastName):
     logo = ''
     # teamLastName = 'raptors'
     for fileName in onlyfiles:
-        if teamLastName.lower() in fileName:
+        if teamLastName.lower() == 'nets':
+            logo = 'nba-brooklyn-nets-logo-300x300.png'
+        elif teamLastName.lower() in fileName:
             logo = fileName
     return f"nba logos/{logo}"
 
@@ -202,7 +205,7 @@ for x in range(len(homeTeamList)):
     with st.container():
         with col1:
             full_name = homeTeamList[x]
-            last_name = (full_name.split(' '))[1]
+            last_name = (full_name.split(' ')).pop()
             st.subheader("Home")
             st.subheader(full_name)
             image = Image.open(getLogo(last_name))
@@ -210,7 +213,7 @@ for x in range(len(homeTeamList)):
 
         with col2:
             full_name = oppTeamList[x]
-            last_name = (full_name.split(' '))[1]
+            last_name = (full_name.split(' ')).pop()
             st.subheader("Away")
             st.subheader(full_name)
             image = Image.open(getLogo(last_name))
@@ -218,7 +221,7 @@ for x in range(len(homeTeamList)):
 
         with col3:
             full_name = winnerList[x]
-            last_name = (full_name.split(' '))[1]
+            last_name = (full_name.split(' ')).pop()
             st.subheader("Pred. Winner")
             st.subheader(full_name)
             image = Image.open(getLogo(last_name))
@@ -237,3 +240,7 @@ st.write('© Created by Shaf Muhammad')
 st.write('Logos owned by the NBA')
 st.write('shafmuhammad3@gmail.com')
 st.write('Version 1.0.0')
+
+# PAT (personal access token)
+# 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
+# streamlit run backendfrontend.py
