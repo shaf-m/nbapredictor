@@ -243,24 +243,24 @@ for x in range(len(homeTeamList)):
             last_name = (full_name.split(' ')).pop()
             st.subheader("Home")
             st.subheader(full_name)
-            image = Image.open(getLogo(last_name))
-            st.image(image, width=100)
+            # image = Image.open(getLogo(last_name))
+            st.image(getLogo(last_name), width=100)
 
         with col2:
             full_name = oppTeamList[x]
             last_name = (full_name.split(' ')).pop()
             st.subheader("Away")
             st.subheader(full_name)
-            image = Image.open(getLogo(last_name))
-            st.image(image, width=100)
+            # image = Image.open(getLogo(last_name))
+            st.image(getLogo(last_name), width=100)
 
         with col3:
             full_name = winnerList[x]
             last_name = (full_name.split(' ')).pop()
             st.subheader("Pred. Winner")
             st.subheader(full_name)
-            image = Image.open(getLogo(last_name))
-            st.image(image, width=100)
+            # image = Image.open(getLogo(last_name))
+            st.image(getLogo(last_name), width=100)
 
         st.write('#####')
         st.write('#####')
