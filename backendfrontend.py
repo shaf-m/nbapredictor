@@ -4,12 +4,13 @@ from nba_api.stats.endpoints import boxscorefourfactorsv2
 from nba_api.stats.library.parameters import EndPeriod, EndRange, RangeType, StartPeriod, StartRange
 import pandas as pd
 from random import choice
-from datetime import date
+import datetime
 from time import sleep
 from os import listdir
 from os.path import isfile, join
 import streamlit as st
 from PIL import Image
+import pytz
 
 
 st.set_page_config(page_title="Today's NBA Predictions", layout='wide')
@@ -17,10 +18,15 @@ st.header('NBA Predictions of The Day')
 
 with st.spinner('Predicting Winners... This may take a minute.'):
     season = '2020-21'
-
     # Thu, Dec 1, 2022
-    dayWeek = (date.today().strftime('%A'))[:3]
-    test = str(date.today()).split('-')
+    date_tmzn = datetime.datetime.now(pytz.timezone('EST'))
+    # print(date_tmzn)
+
+    dayWeek = (date_tmzn.strftime('%A'))[:3]
+    # date_est = ((str(date_tmzn).split(' '))[0])
+    # print(date_est)
+    test = ((str(date_tmzn).split(' '))[0]).split('-')
+
     year = test[0]
     day = test[2]
     month = test[1]
@@ -39,6 +45,8 @@ with st.spinner('Predicting Winners... This may take a minute.'):
 
     formattedDate = f'{dayWeek}, {monthDict[month]} {day}, {year}'
     # formattedDate = 'Mon, Dec 26, 2022'
+    # print(formattedDate)
+
     print(f'\nSimulating games and predicting winners for {formattedDate}.\n'
           f'Based on historical data from the {season} NBA season.\n')
 
