@@ -72,7 +72,7 @@ with st.spinner('Predicting Winners... This may take a minute.'):
     # print(datesList)
 
     for matches in range(len(homeTeamList)):
-        randSleep = round((uniform(0.600, 0.800)), 3)
+        randSleep = round((uniform(0.600, 0.900)), 3)
         sleep(randSleep)
         nba_teams = teams.get_teams()
         homeTeamSearch = [team for team in nba_teams if team['full_name'] == (homeTeamList[matches])][0]
@@ -86,7 +86,7 @@ with st.spinner('Predicting Winners... This may take a minute.'):
         print(f"Simulating Match {matches + 1}/{len(homeTeamList)}")
 
         gameFinder = teamgamelog.TeamGameLog(team_id=homeTeam_id, season=season)
-        sleep(.600)
+        sleep(randSleep)
 
         games = gameFinder.get_data_frames()[0]
         dataframe = games
@@ -108,7 +108,7 @@ with st.spinner('Predicting Winners... This may take a minute.'):
         oppCount = 0
         tie = 0
         for ids in range(len(gamesIDAgainstOpp)):
-            sleep(.600)
+            sleep(randSleep)
             fourFacterFinder = boxscorefourfactorsv2.BoxScoreFourFactorsV2(game_id=f"00{gamesIDAgainstOpp[ids]}",
                                                                            range_type=RangeType.default,
                                                                            start_period=StartPeriod.default,
