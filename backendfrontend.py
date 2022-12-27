@@ -3,7 +3,7 @@ from nba_api.stats.endpoints import teamgamelog
 from nba_api.stats.endpoints import boxscorefourfactorsv2
 from nba_api.stats.library.parameters import EndPeriod, EndRange, RangeType, StartPeriod, StartRange
 import pandas as pd
-from random import choice
+from random import choice, uniform
 import datetime
 from time import sleep
 from os import listdir
@@ -72,7 +72,8 @@ with st.spinner('Predicting Winners... This may take a minute.'):
     # print(datesList)
 
     for matches in range(len(homeTeamList)):
-        sleep(.600)
+        randSleep = round((uniform(0.600, 0.800)), 3)
+        sleep(randSleep)
         nba_teams = teams.get_teams()
         homeTeamSearch = [team for team in nba_teams if team['full_name'] == (homeTeamList[matches])][0]
         homeTeam_id = homeTeamSearch['id']
