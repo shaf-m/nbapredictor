@@ -1,12 +1,3 @@
-# NBA Win Predictor - Based on the Four Factors of basketball.
-#
-# © Created by Shaf Muhammad
-# Logos and team names are property of the NBA
-# Reach out at shafmuhammad3@gmail.com
-#
-# Last Updated: December 29th, 2022
-# Version 1.0.0
-
 from nba_api.stats.static import teams
 from nba_api.stats.endpoints import teamgamelog, boxscorefourfactorsv2
 from nba_api.stats.library.parameters import EndPeriod, EndRange, RangeType, StartPeriod, StartRange
@@ -239,7 +230,7 @@ def predictions_to_excel(winnerList):
     df3['Winners'] = winnerList
     # print(df3)
     df3.to_excel('predictions.xlsx')
-    # print("Predicted winners added to predictions.xlsx spreadsheet.")
+    # print("Predicted winners added to December (predictions) spreadsheet.")
 
 
 # Backend data analysis, main function.
