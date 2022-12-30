@@ -45,7 +45,7 @@ The number in parentheses is the approximate weight assigned to each factor. Sho
 
 ## UI and Demonstration
 
-The following is a demonstration for the predictions (based on the 2020-21 season) of Tuesday, December 27th, 2022.
+The following is a demonstration for the predictions (based on data from the 2020-21 season) of Tuesday, December 27th, 2022.
 Comparing the predictions to the final scores, we see 7/10 games were predicted correctly, giving us an accuracy of 70%.
 Of the games that were inaccurately predicted, the final score margin was very slim, of under 10 points.
 
