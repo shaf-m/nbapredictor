@@ -2,6 +2,7 @@
 
 ## Overview
 This is a full-stack web-based application that was created to predict the winners of future NBA games.
+All data manipulation is done using Pandas.
 The winners of each match-up are predicted based on simulation games, which are based on Four Factor calculations of each match-up.
 The program commences by determining the current date in the eastern time zone (EST).
 The NBA schedule for the rest of the 2022-23 season is stored in individual Excel spreadsheets corresponding to each month, accessed from [Basketball Reference](https://www.basketball-reference.com/).
@@ -48,6 +49,7 @@ The number in parentheses is the approximate weight assigned to each factor. Sho
 The following is a demonstration for the predictions (based on data from the 2020-21 season) of Tuesday, December 27th, 2022.
 Comparing the predictions to the final scores, we see 7/10 games were predicted correctly, giving us an accuracy of 70%.
 Of the games that were inaccurately predicted, the final score margin was very slim, of under 10 points.
+As mentioned in the Overview, these predictions can be more accurately made if virtual machines were used to run simultaneous simulations for multiple seasons at once (current, and past three NBA seasons). However, considering data from only a single season was used and yielded in an accuracy of 70%, this is quite appreciable.
 
 
 https://user-images.githubusercontent.com/121407023/210023224-0d722f09-96a1-49ef-8572-b84aba393ad0.mov
@@ -56,5 +58,8 @@ https://user-images.githubusercontent.com/121407023/210023224-0d722f09-96a1-49ef
 
 [NBA Dec 27th Final Scores.pdf](https://github.com/shaf-m/nbapredictor/files/10322625/NBA.Dec.27th.Final.Scores.pdf)
 
+<hr>
 
+In order to limit call requests to the API, the website is currently closed to the public. 
+If you'd like to experience nbapredictor for yourself, or if you have any questions, comments, or suggestions, please feel free to reach out to me by email at shafmuhammad3@gmail.com.
 
