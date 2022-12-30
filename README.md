@@ -22,8 +22,7 @@ The frontend of this application was created, deployed and hosted through [Strea
 
 How do basketball teams win games?
 While searching for an answer to that question, Dean Oliver identified what he called the "Four Factors of Basketball Success".
-The four factors are to score efficiently, protect the basketball on offense, grab as many rebounds as possible, and get to the foul line as often as possible.
-The number in parentheses is the approximate weight assigned to each factor. Shooting is the most important factor, followed by turnovers, rebounding, and free throws.
+The four factors are to score efficiently, protect the basketball on offense, grab as many rebounds as possible, and get to the foul line as often as possible. Shooting is the most important factor, followed by turnovers, rebounding, and free throws. The table below shows the approximate weight assigned to each factor.
 
 
 | Factor  | Shooting  | Turnovers  | Rebounding | Free Throws |
