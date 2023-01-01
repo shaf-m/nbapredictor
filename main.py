@@ -34,6 +34,8 @@ def get_date():
     test = ((str(date_tmzn).split(' '))[0]).split('-')
     year = test[0]
     day = test[2]
+    if day.index('0') == 0:
+        day = day[1]
     month = test[1]
 
     monthDict = {'01': 'Jan',
