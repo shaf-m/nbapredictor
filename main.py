@@ -35,7 +35,9 @@ def get_date():
     year = test[0]
     day = test[2]
     if day.index('0') == 0:
-        day = day[1]
+        day = (test[2])[1]
+    else:
+        day = test[2] 
     month = test[1]
 
     monthDict = {'01': 'Jan',
