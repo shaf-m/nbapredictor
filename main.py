@@ -34,7 +34,7 @@ def get_date():
     test = ((str(date_tmzn).split(' '))[0]).split('-')
     year = test[0]
     day = test[2]
-    if day.index('0') == 0:
+    if test[2].index('0') == 0:
         day = (test[2])[1]
     else:
         day = test[2] 
