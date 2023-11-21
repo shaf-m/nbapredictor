@@ -45,10 +45,10 @@ The four factors are to score efficiently, protect the basketball on offense, gr
 
 ## UI and Demonstration
 
-The following is a demonstration for the predictions (based on data from the 2020-21 season) of Tuesday, December 27th, 2022.
-Comparing the predictions to the final scores, we see 7/10 games were predicted correctly, giving us an accuracy of 70%.
+The following is a demonstration for the predictions (based on data from the 2020-21 season) of the arbitrary date, Tuesday, December 27th, 2022.
+Comparing the predictions to the final scores, we see 8/10 games were predicted correctly, giving us an accuracy of 80%.
 Of the games that were inaccurately predicted, the final score margin was very slim, of under 10 points.
-As mentioned in the Overview, these predictions can be more accurately made if virtual machines were used to run simultaneous simulations for multiple seasons at once (current, and past three NBA seasons). However, considering data from only a single season was used and yielded in an accuracy of 70%, this is quite appreciable.
+As mentioned in the Overview, these predictions can be more accurately made if virtual machines were used to run simultaneous simulations for multiple seasons at once (current, and past three NBA seasons). However, considering data from only a single season was used and yielded in an accuracy of 80%, this is quite appreciable.
 
 
 https://user-images.githubusercontent.com/121407023/210023224-0d722f09-96a1-49ef-8572-b84aba393ad0.mov
