@@ -411,4 +411,4 @@ def main(season):
 
 
 # Runs the application.
-main(season='2020-21')
+main(season='2022-23')
