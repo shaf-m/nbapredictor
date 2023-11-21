@@ -4,8 +4,8 @@
 # Logos and team names are property of the NBA
 # Reach out at shafmuhammad3@gmail.com
 #
-# Last Updated: December 29th, 2022
-# Version 1.0.0
+# Last Updated: November 20th, 2023
+# Version 1.0.1
 
 from nba_api.stats.static import teams
 from nba_api.stats.endpoints import teamgamelog, boxscorefourfactorsv2
@@ -397,7 +397,7 @@ def main_frontend(winnerList, homeTeamList, oppTeamList, datesList, season):
     st.write('Logos owned by the NBA')
     st.write('shafmuhammad3@gmail.com')
     st.write(f'Predictions based on data from the {season} season.')
-    st.write('Version 1.0.0')
+    st.write('Version 1.0.1')
 
 
 # Main function consisting of the backend and frontend of the application.
