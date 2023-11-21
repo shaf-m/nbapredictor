@@ -71,7 +71,7 @@ def get_schedule():
 # Filters all the games in the monthly schedule (spreadsheet) that will take place on the current day.
 # Stores this data from required columns in a list, to be accessed later.
 def games_today(today, schedule):
-    dataframe = pd.read_excel('november.xlsx')
+    dataframe = pd.read_excel(schedule)
     rslt_df = dataframe[dataframe['Date'] == today]
     # print(rslt_df)
     rslt_df.to_excel('predictions.xlsx')
