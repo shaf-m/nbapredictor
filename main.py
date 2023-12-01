@@ -23,17 +23,6 @@ import pytz
 def page_init():
     st.set_page_config(page_title="Today's NBA Predictions", layout='wide')
     st.header('NBA Predictions of The Day')
-    # Backgroud image
-    st.markdown(
-    """
-    <style>
-    .reportview-container {
-        background: url("https://images.unsplash.com/photo-1486882430381-e76d701e0a3e?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
-    }
-   </style>
-    """,
-    unsafe_allow_html=True
-    )
 
 
 # Retrieves the current date, specifically formatted corresponding to the dates in the schedule.
